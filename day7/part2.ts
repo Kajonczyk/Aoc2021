@@ -4,7 +4,7 @@ const input = fs.readFileSync('input.txt', 'utf8').split(',').map(Number);
 let position = 0;
 let lowest = Infinity;
 
-const calculatePositionDiff = (num) => {
+const calculatePositionDiff = (num: number) => {
 	let sum = 0;
 	for (let i = 1; i <= num; i++) {
 		sum += i;
